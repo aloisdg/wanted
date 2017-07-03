@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#app {
+  text-transform: uppercase;
+  width: 64mm;
+  height: 88mm;
+  border: 2mm solid black;
+  border-radius: 3px;
+  position: relative;
+  /*  overflow: hidden;*/
+}
+
+#app:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 101%;
+  background: url('https://s-media-cache-ak0.pinimg.com/736x/53/b4/44/53b444ea99a7b8c7e90631ea6e81e877.jpg') 0 0 no-repeat;
+  backgroud-size: cover;
+  transform: rotate(180deg) scaleX(1);
+  z-index: -1;
+  text-align: left;
+}
+
+#app header,
+#app section,
+#app footer {
+  text-align: center;
+}
+
+#app figure {
+  width: 50mm;
+  height: 40mm;
+  margin: 0 auto;
+  overflow:hidden;
+}
+
+#app figure img {
+  filter: grayscale(100%);
+  height: 40mm;
+}
+
+#app header,
+#app figure,
+#app footer {
+  position: relative;
+}
+
+#app footer p {
+  font-size: 9pt;
+}

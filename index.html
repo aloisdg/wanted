@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Wanted</title>
+  <link rel="stylesheet" type="text/css" href="src/style.css" media="all">
+</head>
+
+<body>
+  <div id="app">
+    <header>
+      <h1>
+        wanted
+      </h1>  
+      <h2>
+        <span>for</span>
+        <span>{{ reason }}</span>
+      </h2>
+    </header>
+    <section>
+      <figure>
+        <img v-bind:src="image" />
+      </figure>
+      <figcaption>
+        {{name}}
+      </figcaption>
+    </section>
+    <footer>
+      <h2>
+        <span>
+    {{ reward }} GP
+  </span>
+        <span>
+    reward
+  </span>
+      </h2>
+      <p>
+        Will by pay by {{ author }} for his apprhension, {{ state }}
+      </p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+<script src="./dist/build.js"></script>
+
+</html>

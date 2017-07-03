@@ -1,0 +1,23 @@
+{
+  "name": "wanted",
+  "version": "0.1.0",
+  "description": "wanted poster generator",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vue": "git+https://github.com/DanielRosenwasser/vue.git#540a38fb21adb7a7bc394c65e23e6cffb36cd867"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.4",
+    "ts-loader": "^2.2.2",
+    "typescript": "^2.4.1",
+    "vue-loader": "^13.0.0",
+    "vue-template-compiler": "^2.2.1",
+    "webpack": "^3.0.0"
+  }
+}
