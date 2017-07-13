@@ -24,7 +24,10 @@ class Poster {
 
 // date
 
-let poster = new Poster('John "El Pyro" Kidd', 120, 'genocide', 'http://www.artofmtg.com/wp-content/uploads/2015/09/Firemantle-Mage-Battle-for-Zendikar-MtG-Art.jpg')
+let poster = new Poster('Mr. Kobayashi'
+, 120
+, 'genocide'
+, 'http://vignette1.wikia.nocookie.net/vsbattles/images/3/3b/IP.png/revision/latest?cb=20160419213416')
 
 poster.author = "Castelieu Police Force"
 poster.state = State.DeadOrAlive

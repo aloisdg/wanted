@@ -1,3 +1,24 @@
+@font-face {
+  font-family: 'Nashville';
+    src:  url('font/Nashville.ttf.woff') format('woff'),
+    url('font/Nashville.ttf.svg#Nashville') format('svg'),
+    url('font/Nashville.ttf.eot'),
+    url('font/Nashville.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'akaPosse';
+    src:  url('font/akaPosse.ttf.woff') format('woff'),
+    url('font/akaPosse.ttf.svg#akaPosse') format('svg'),
+    url('font/akaPosse.ttf.eot'),
+    url('font/akaPosse.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +33,7 @@
   border-radius: 3px;
   position: relative;
   /*  overflow: hidden;*/
+  font-family: 'Nashville';
 }
 
 #app:before {
@@ -42,6 +64,7 @@
 #app figure img {
   filter: grayscale(100%);
   height: 40mm;
+  opacity: 0.7;
 }
 
 #app header,
@@ -52,4 +75,30 @@
 
 #app footer p {
   font-size: 9pt;
+}
+
+.coin {
+    box-sizing: border-box;
+  margin:0;
+  padding:0;
+  width: 15px;
+  height: 15px;
+  background: black/* #DAA520*/; /*goldish than gold?*/
+  border-radius: 50%;
+  color: papayawhip;
+  text-align: center;
+  line-height: 15px;
+  vertical-align: middle;
+  font-size: 10px;
+  transform: rotate(15deg);
+  transform-origin: center;
+  display:inline-block;
+}
+
+.reward {
+  font-family: 'akaPosse';
+}
+
+#app span, #app p {
+  opacity: 0.9;
 }

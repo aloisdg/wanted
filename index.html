@@ -12,8 +12,8 @@
   <div id="app">
     <header>
       <h1>
-        wanted
-      </h1>  
+        <span>wanted<span>
+      </h1>
       <h2>
         <span>for</span>
         <span>{{ reason }}</span>
@@ -24,17 +24,14 @@
         <img v-bind:src="image" />
       </figure>
       <figcaption>
-        {{name}}
+        <span>{{name}}</span>
       </figcaption>
     </section>
     <footer>
       <h2>
-        <span>
-    {{ reward }} GP
-  </span>
-        <span>
-    reward
-  </span>
+        <span class="reward">{{ reward }}G</span>
+        <!--<span class="coin">&#484;</span>-->
+        <span>reward</span>
       </h2>
       <p>
         Will by pay by {{ author }} for his apprhension, {{ state }}
