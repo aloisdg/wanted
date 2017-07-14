@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,38 +10,68 @@
 </head>
 
 <body>
-  <div id="app">
-    <header>
-      <h1>
-        <span>wanted<span>
-      </h1>
-      <h2>
-        <span>for</span>
-        <span>{{ reason }}</span>
-      </h2>
+  <div class="wrapper" id="wrapper">
+    <header class="one">
+      <h1>Wanted
+        <h1>
     </header>
-    <section>
-      <figure>
-        <img v-bind:src="image" />
-      </figure>
-      <figcaption>
-        <span>{{name}}</span>
-      </figcaption>
+    <section class="editor">
+      <fieldset>
+        <p>Theme</p>
+        <input type="radio" name="theme" id="Fantasy" value="Fantasy" checked><label for="Fantasy">Fantasy</label>
+        <input type="radio" name="theme" id="Western" value="Western"><label for="Western">Western</label>
+        <input type="radio" name="theme" id="Futurist" value="Futurist"><label for="Futurist">Futurist</label>
+      </fieldset>
+      <label for="name">Name</label><input v-model="name" id="name" name="name" type="text" />
+      <label for="reward">Reward</label><input v-model="reward" id="reward" name="reward" type="text" />
+      <label for="reason">Reason</label><input v-model="reason" id="reason" name="reason" type="text" />
+      <label for="url">Image URL</label><input v-model="image" id="url" name="url" type="text" />
+      <label for="author">Author</label><input v-model="author" id="author" name="author" type="text" />
+      <fieldset>
+        <p>State</p>
+        <input type="radio" name="state" value="Dead" id="Dead" checked><label for="Dead">Dead</label>
+        <input type="radio" name="state" value="Alive" id="Alive"><label for="Alive">Alive</label>
+        <input type="radio" name="state" value="Both" id="Both"><label for="Both">Dead or Alive</label>
+
+      </fieldset>
     </section>
-    <footer>
-      <h2>
-        <span class="reward">{{ reward }}G</span>
-        <!--<span class="coin">&#484;</span>-->
-        <span>reward</span>
-      </h2>
-      <p>
-        Will by pay by {{ author }} for his apprhension, {{ state }}
-      </p>
+    <section class="preview">
+      <div id="app">
+        <header>
+          <h1>
+            <span>wanted<span>
+            </h1>
+            <h2>
+              <span>for</span>
+            <span>{{ reason }}</span>
+            </h2>
+        </header>
+        <section>
+          <figure>
+            <img v-bind:src="image" />
+          </figure>
+          <figcaption>
+            <span>{{name}}</span>
+          </figcaption>
+        </section>
+        <footer>
+          <h2>
+            <span class="reward">{{ reward }}G</span>
+            <!--<span class="coin">&#484;</span>-->
+            <span>reward</span>
+          </h2>
+          <p>
+            Will by pay by {{ author }} for his apprhension, {{ state }}
+          </p>
+        </footer>
+      </div>
+    </section>
+    <footer class="four">
+      <p>Made by aloisdg under GPLv3</p>
     </footer>
   </div>
   <script src="script.js"></script>
 </body>
-</html>
 <script src="./dist/build.js"></script>
 
 </html>

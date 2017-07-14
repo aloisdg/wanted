@@ -33,7 +33,7 @@ poster.author = "Castelieu Police Force"
 poster.state = State.DeadOrAlive
 
 let v = new Vue({
-    el: "#app",
+    el: "#wrapper",
     // template: `
     // <div>
     //     <div>Hello {{name}}!</div>
